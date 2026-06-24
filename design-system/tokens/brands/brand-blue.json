@@ -18,5 +18,21 @@
   "surface": {
     "page": { "$value": "{color.blue.50}", "$type": "color",
               "$description": "Blue brand tints the page background with the lightest blue." }
+  },
+
+  "input": {
+    "border-color-focus": { "$value": "{color.blue.600}", "$type": "color" },
+    "radius":             { "$value": "{radius.md}",       "$type": "dimension" },
+    "shadow-focus":       { "$value": "{ring.blue}",       "$type": "shadow" }
+  },
+
+  "card": {
+    "radius": { "$value": "{radius.xl}", "$type": "dimension",
+                "$description": "Blue brand uses larger radius — softer feel." }
+  },
+
+  "badge": {
+    "radius": { "$value": "{radius.full}", "$type": "dimension",
+                "$description": "Blue brand uses pill-shaped badges." }
   }
 }

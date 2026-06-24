@@ -66,6 +66,9 @@
   --easing-ease-in: cubic-bezier(0.4, 0, 1, 1);
   --easing-ease-out: cubic-bezier(0, 0, 0.2, 1);
   --easing-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ring-blue: 0 0 0 3px rgba(37, 99, 235, 0.25); /** NEW PRIMITIVE — focus ring for blue-family brands. */
+  --ring-dark: 0 0 0 3px rgba(17, 24, 39, 0.25); /** NEW PRIMITIVE — focus ring for dark/neutral brands. */
+  --ring-neutral: 0 0 0 3px rgba(156, 163, 175, 0.4); /** NEW PRIMITIVE — generic focus ring for unstyled contexts. */
   --action-primary-bg: #2563eb; /** Blue brand uses the blue-600 swatch. */
   --action-primary-bg-hover: #1d4ed8;
   --action-primary-bg-active: #1e3a8a;
@@ -87,4 +90,32 @@
   --status-success-fg: #15803d;
   --status-error-bg: #fee2e2;
   --status-error-fg: #b91c1c;
+  --input-bg: #ffffff; /** Input field background. */
+  --input-fg: #111827; /** Typed text colour. */
+  --input-placeholder-fg: #9ca3af; /** Placeholder text colour. */
+  --input-border-color: #e5e7eb; /** Resting border. */
+  --input-border-color-focus: #2563eb;
+  --input-border-width: 1px;
+  --input-radius: 8px;
+  --input-padding-x: 12px;
+  --input-padding-y: 8px;
+  --input-font-size: 14px;
+  --input-shadow-focus: 0 0 0 3px rgba(37, 99, 235, 0.25);
+  --card-bg: #ffffff;
+  --card-border-color: #e5e7eb;
+  --card-border-width: 1px;
+  --card-radius: 16px; /** Blue brand uses larger radius — softer feel. */
+  --card-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
+  --card-padding: 24px;
+  --badge-default-bg: #f3f4f6;
+  --badge-default-fg: #4b5563;
+  --badge-success-bg: #dcfce7;
+  --badge-success-fg: #15803d;
+  --badge-error-bg: #fee2e2;
+  --badge-error-fg: #b91c1c;
+  --badge-radius: 9999px; /** Blue brand uses pill-shaped badges. */
+  --badge-font-size: 12px;
+  --badge-font-weight: 600;
+  --badge-padding-x: 8px;
+  --badge-padding-y: 4px;
 }

@@ -52,5 +52,56 @@
       "bg": { "$value": "{color.red.100}", "$type": "color" },
       "fg": { "$value": "{color.red.700}", "$type": "color" }
     }
+  },
+
+  "input": {
+    "bg":                 { "$value": "{color.neutral.0}",   "$type": "color",
+                            "$description": "Input field background." },
+    "fg":                 { "$value": "{color.neutral.900}", "$type": "color",
+                            "$description": "Typed text colour." },
+    "placeholder-fg":     { "$value": "{color.neutral.400}", "$type": "color",
+                            "$description": "Placeholder text colour." },
+    "border-color":       { "$value": "{color.neutral.200}", "$type": "color",
+                            "$description": "Resting border." },
+    "border-color-focus": { "$value": "{color.blue.600}",    "$type": "color",
+                            "$description": "Border on focus. Brand files override to match brand colour." },
+    "border-width":       { "$value": "{border-width.1}",    "$type": "dimension" },
+    "radius":             { "$value": "{radius.md}",          "$type": "dimension" },
+    "padding-x":          { "$value": "{space.3}",            "$type": "dimension" },
+    "padding-y":          { "$value": "{space.2}",            "$type": "dimension" },
+    "font-size":          { "$value": "{font-size.sm}",       "$type": "dimension" },
+    "shadow-focus":       { "$value": "{ring.blue}",          "$type": "shadow",
+                            "$description": "Focus ring. References ring.* primitives — brand files override." }
+  },
+
+  "card": {
+    "bg":           { "$value": "{color.neutral.0}",   "$type": "color" },
+    "border-color": { "$value": "{color.neutral.200}", "$type": "color" },
+    "border-width": { "$value": "{border-width.1}",    "$type": "dimension" },
+    "radius":       { "$value": "{radius.lg}",          "$type": "dimension",
+                      "$description": "Corner rounding. Blue brand makes this larger; dark brand smaller." },
+    "shadow":       { "$value": "{shadow.md}",           "$type": "shadow" },
+    "padding":      { "$value": "{space.6}",             "$type": "dimension" }
+  },
+
+  "badge": {
+    "default": {
+      "bg": { "$value": "{color.neutral.100}", "$type": "color" },
+      "fg": { "$value": "{color.neutral.600}", "$type": "color" }
+    },
+    "success": {
+      "bg": { "$value": "{color.green.100}", "$type": "color" },
+      "fg": { "$value": "{color.green.700}", "$type": "color" }
+    },
+    "error": {
+      "bg": { "$value": "{color.red.100}", "$type": "color" },
+      "fg": { "$value": "{color.red.700}", "$type": "color" }
+    },
+    "radius":      { "$value": "{radius.full}",          "$type": "dimension",
+                     "$description": "Pill by default. Dark brand overrides to xs for a tag look." },
+    "font-size":   { "$value": "{font-size.xs}",         "$type": "dimension" },
+    "font-weight": { "$value": "{font-weight.semibold}", "$type": "fontWeight" },
+    "padding-x":   { "$value": "{space.2}",              "$type": "dimension" },
+    "padding-y":   { "$value": "{space.1}",              "$type": "dimension" }
   }
 }
