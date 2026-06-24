@@ -88,5 +88,13 @@
     "ease-in":     { "$value": "cubic-bezier(0.4, 0, 1, 1)",  "$type": "cubicBezier" },
     "ease-out":    { "$value": "cubic-bezier(0, 0, 0.2, 1)",  "$type": "cubicBezier" },
     "ease-in-out": { "$value": "cubic-bezier(0.4, 0, 0.2, 1)","$type": "cubicBezier" }
+  },
+  "ring": {
+    "blue":    { "$value": "0 0 0 3px rgba(37, 99, 235, 0.25)",  "$type": "shadow",
+                 "$description": "NEW PRIMITIVE — focus ring for blue-family brands." },
+    "dark":    { "$value": "0 0 0 3px rgba(17, 24, 39, 0.25)",   "$type": "shadow",
+                 "$description": "NEW PRIMITIVE — focus ring for dark/neutral brands." },
+    "neutral": { "$value": "0 0 0 3px rgba(156, 163, 175, 0.4)", "$type": "shadow",
+                 "$description": "NEW PRIMITIVE — generic focus ring for unstyled contexts." }
   }
 }

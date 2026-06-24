@@ -18,5 +18,24 @@
   "surface": {
     "page": { "$value": "{color.neutral.100}", "$type": "color",
               "$description": "Dark brand uses a light-gray page background." }
+  },
+
+  "input": {
+    "border-color-focus": { "$value": "{color.neutral.800}", "$type": "color" },
+    "radius":             { "$value": "{radius.none}",        "$type": "dimension",
+                            "$description": "Dark brand uses sharp inputs." },
+    "shadow-focus":       { "$value": "{ring.dark}",          "$type": "shadow" }
+  },
+
+  "card": {
+    "radius": { "$value": "{radius.sm}",   "$type": "dimension",
+                "$description": "Dark brand uses minimal rounding — near-sharp." },
+    "shadow": { "$value": "{shadow.none}", "$type": "shadow",
+                "$description": "Dark brand is flat — no elevation shadow." }
+  },
+
+  "badge": {
+    "radius": { "$value": "{radius.xs}", "$type": "dimension",
+                "$description": "Dark brand uses square-ish tag badges." }
   }
 }

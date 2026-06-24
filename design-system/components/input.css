@@ -1,0 +1,39 @@
+/*
+ * Headless input — zero hardcoded values.
+ * All properties read from input.* semantic CSS variables.
+ */
+
+.input {
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  line-height: 1.5;
+  appearance: none;
+
+  background-color: var(--input-bg);
+  color:            var(--input-fg);
+  border:           var(--input-border-width) solid var(--input-border-color);
+  border-radius:    var(--input-radius);
+  padding-top:      var(--input-padding-y);
+  padding-bottom:   var(--input-padding-y);
+  padding-left:     var(--input-padding-x);
+  padding-right:    var(--input-padding-x);
+  font-size:        var(--input-font-size);
+
+  outline: none;
+  transition: border-color 150ms ease-out, box-shadow 150ms ease-out;
+}
+
+.input::placeholder {
+  color: var(--input-placeholder-fg);
+}
+
+.input:focus {
+  border-color: var(--input-border-color-focus);
+  box-shadow:   var(--input-shadow-focus);
+}
+
+.input:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

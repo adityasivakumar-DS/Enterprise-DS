@@ -1,0 +1,33 @@
+/*
+ * Headless badge — zero hardcoded values.
+ * Variant (default / success / error) is set via a modifier class.
+ * All structural properties read from badge.* semantic CSS variables.
+ */
+
+.badge {
+  display:        inline-flex;
+  align-items:    center;
+  white-space:    nowrap;
+
+  border-radius:  var(--badge-radius);
+  font-size:      var(--badge-font-size);
+  font-weight:    var(--badge-font-weight);
+  padding-top:    var(--badge-padding-y);
+  padding-bottom: var(--badge-padding-y);
+  padding-left:   var(--badge-padding-x);
+  padding-right:  var(--badge-padding-x);
+
+  /* Default variant */
+  background-color: var(--badge-default-bg);
+  color:            var(--badge-default-fg);
+}
+
+.badge--success {
+  background-color: var(--badge-success-bg);
+  color:            var(--badge-success-fg);
+}
+
+.badge--error {
+  background-color: var(--badge-error-bg);
+  color:            var(--badge-error-fg);
+}
