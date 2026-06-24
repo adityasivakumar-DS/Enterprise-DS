@@ -1,0 +1,90 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+[data-brand="dark"] {
+  --color-blue-50: #eff6ff;
+  --color-blue-100: #dbeafe;
+  --color-blue-300: #93c5fd;
+  --color-blue-500: #3b82f6;
+  --color-blue-600: #2563eb;
+  --color-blue-700: #1d4ed8;
+  --color-blue-900: #1e3a8a;
+  --color-neutral-0: #ffffff;
+  --color-neutral-50: #f9fafb;
+  --color-neutral-100: #f3f4f6;
+  --color-neutral-200: #e5e7eb;
+  --color-neutral-400: #9ca3af;
+  --color-neutral-600: #4b5563;
+  --color-neutral-800: #1f2937;
+  --color-neutral-900: #111827;
+  --color-neutral-950: #030712;
+  --color-red-100: #fee2e2;
+  --color-red-500: #ef4444;
+  --color-red-700: #b91c1c;
+  --color-green-100: #dcfce7;
+  --color-green-500: #22c55e;
+  --color-green-700: #15803d;
+  --radius-none: 0px;
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+  --shadow-none: none;
+  --shadow-sm: 0 1px 2px 0 rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1);
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --border-width-0: 0px;
+  --border-width-1: 1px;
+  --border-width-2: 2px;
+  --duration-instant: 0ms;
+  --duration-fast: 100ms;
+  --duration-normal: 200ms;
+  --duration-slow: 300ms;
+  --easing-linear: linear;
+  --easing-ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --easing-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --easing-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --action-primary-bg: #111827; /** Dark brand uses near-black. */
+  --action-primary-bg-hover: #1f2937;
+  --action-primary-bg-active: #4b5563;
+  --action-primary-fg: #ffffff;
+  --action-primary-radius: 0px; /** Sharp corners — 0px. */
+  --action-primary-shadow: none;
+  --action-primary-border-width: 0px; /** Stroke width. 0 = filled button, 1 or 2 = outline variant. */
+  --action-primary-padding-x: 16px; /** Horizontal content inset. */
+  --action-primary-padding-y: 8px; /** Vertical content inset. */
+  --action-primary-font-size: 14px; /** Label text size. */
+  --action-primary-font-weight: 600; /** Label text weight. */
+  --action-primary-transition-duration: 100ms; /** Speed of hover/focus transition. */
+  --action-primary-transition-easing: cubic-bezier(0, 0, 0.2, 1); /** Curve of hover/focus transition. */
+  --surface-page: #f3f4f6; /** Dark brand uses a light-gray page background. */
+  --surface-card: #ffffff; /** Card, panel, sheet background. */
+  --surface-card-border: #e5e7eb; /** Stroke colour around cards. */
+  --surface-overlay: #030712; /** Modal scrim base colour (apply opacity in the component). */
+  --status-success-bg: #dcfce7;
+  --status-success-fg: #15803d;
+  --status-error-bg: #fee2e2;
+  --status-error-fg: #b91c1c;
+}
