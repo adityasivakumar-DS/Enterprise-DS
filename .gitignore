@@ -13,3 +13,6 @@ loraloop/
 
 # Node
 node_modules/
+
+# Storybook build output
+design-system/storybook-static/
