@@ -1,0 +1,22 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "$description": "Brand B — Black Sharp. Override only the tokens that differ from semantic defaults.",
+
+  "action": {
+    "primary": {
+      "bg":        { "$value": "{color.neutral.900}", "$type": "color",
+                     "$description": "Dark brand uses near-black." },
+      "bg-hover":  { "$value": "{color.neutral.800}", "$type": "color" },
+      "bg-active": { "$value": "{color.neutral.600}", "$type": "color" },
+      "fg":        { "$value": "{color.neutral.0}",   "$type": "color" },
+      "radius":    { "$value": "{radius.none}",        "$type": "dimension",
+                     "$description": "Sharp corners — 0px." },
+      "shadow":    { "$value": "{shadow.none}",        "$type": "shadow" }
+    }
+  },
+
+  "surface": {
+    "page": { "$value": "{color.neutral.100}", "$type": "color",
+              "$description": "Dark brand uses a light-gray page background." }
+  }
+}

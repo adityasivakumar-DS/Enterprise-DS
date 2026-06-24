@@ -1,0 +1,12 @@
+{
+  "name": "@enterprise-ds/tokens",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build-tokens": "node sd.config.js"
+  },
+  "dependencies": {
+    "style-dictionary": "^4.0.0"
+  }
+}
