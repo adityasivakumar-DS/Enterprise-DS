@@ -1,0 +1,75 @@
+{
+  "$description": "Brand: Apex — Corporate, sharp-cornered, blue. Every value here is an alias into core primitives; no raw hex values live in brand files.",
+
+  "brand": {
+    "color": {
+      "primary": {
+        "light": {
+          "$value": "{color.blue.100}",
+          "$type": "color",
+          "$description": "Tint for focus rings, hover states"
+        },
+        "base": {
+          "$value": "{color.blue.700}",
+          "$type": "color",
+          "$description": "Main CTA background"
+        },
+        "dark": {
+          "$value": "{color.blue.900}",
+          "$type": "color",
+          "$description": "CTA background on hover"
+        },
+        "fg": {
+          "$value": "{color.neutral.0}",
+          "$type": "color",
+          "$description": "White text/icons on the CTA"
+        }
+      }
+    },
+    "shape": {
+      "action-radius": {
+        "$value": "{radius.none}",
+        "$type": "dimension",
+        "$description": "Sharp corners — Apex visual identity"
+      }
+    },
+    "shadow": {
+      "action": {
+        "$value": "{shadow.none}",
+        "$type": "shadow",
+        "$description": "Flat — no elevation on CTA"
+      }
+    },
+    "border": {
+      "action-width": {
+        "$value": "{border.width.none}",
+        "$type": "dimension",
+        "$description": "No stroke on CTA"
+      },
+      "action-color": {
+        "$value": "{color.blue.700}",
+        "$type": "color",
+        "$description": "Stroke color if border-width is ever enabled"
+      }
+    },
+    "font": {
+      "action-weight": {
+        "$value": "{font.weight.semibold}",
+        "$type": "fontWeight",
+        "$description": "Strong, authoritative label"
+      }
+    },
+    "motion": {
+      "action-duration": {
+        "$value": "{motion.duration.fast}",
+        "$type": "duration",
+        "$description": "Snappy 100ms response — corporate efficiency"
+      },
+      "action-easing": {
+        "$value": "{motion.easing.ease-out}",
+        "$type": "cubicBezier",
+        "$description": "Decelerates into state — decisive"
+      }
+    }
+  }
+}

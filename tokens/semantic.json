@@ -1,0 +1,73 @@
+{
+  "$description": "Tier 2 — Semantic tokens. Intent-based aliases only. No raw values. Components consume only these tokens. All brand-specific knobs resolve through {brand.*} references so swapping a brand file changes the output.",
+
+  "action": {
+    "primary": {
+      "bg": {
+        "$value": "{brand.color.primary.base}",
+        "$type": "color",
+        "$description": "Fill of the main CTA at rest"
+      },
+      "bg-hover": {
+        "$value": "{brand.color.primary.dark}",
+        "$type": "color",
+        "$description": "Fill of the main CTA on hover/focus"
+      },
+      "fg": {
+        "$value": "{brand.color.primary.fg}",
+        "$type": "color",
+        "$description": "Text and icon color on the main CTA"
+      },
+      "border-color": {
+        "$value": "{brand.border.action-color}",
+        "$type": "color",
+        "$description": "Stroke color; only visible when border-width > 0"
+      },
+      "border-width": {
+        "$value": "{brand.border.action-width}",
+        "$type": "dimension",
+        "$description": "Stroke thickness; set to border.width.none to remove"
+      },
+      "radius": {
+        "$value": "{brand.shape.action-radius}",
+        "$type": "dimension",
+        "$description": "Corner rounding; drives sharp vs pill appearance"
+      },
+      "shadow": {
+        "$value": "{brand.shadow.action}",
+        "$type": "shadow",
+        "$description": "Elevation shadow; set to shadow.none for flat"
+      },
+      "font-size": {
+        "$value": "{font.size.md}",
+        "$type": "dimension",
+        "$description": "Label text size — fixed across brands"
+      },
+      "font-weight": {
+        "$value": "{brand.font.action-weight}",
+        "$type": "fontWeight",
+        "$description": "Label text weight"
+      },
+      "padding-x": {
+        "$value": "{spacing.5}",
+        "$type": "dimension",
+        "$description": "Horizontal internal spacing — fixed across brands"
+      },
+      "padding-y": {
+        "$value": "{spacing.3}",
+        "$type": "dimension",
+        "$description": "Vertical internal spacing — fixed across brands"
+      },
+      "transition-duration": {
+        "$value": "{brand.motion.action-duration}",
+        "$type": "duration",
+        "$description": "How long hover/focus animations run"
+      },
+      "transition-easing": {
+        "$value": "{brand.motion.action-easing}",
+        "$type": "cubicBezier",
+        "$description": "Cubic-bezier curve for hover/focus animations"
+      }
+    }
+  }
+}

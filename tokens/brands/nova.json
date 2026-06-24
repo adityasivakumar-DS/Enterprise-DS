@@ -1,0 +1,75 @@
+{
+  "$description": "Brand: Nova — Consumer, pill-shaped, purple, elevated. Every value here is an alias into core primitives; no raw hex values live in brand files.",
+
+  "brand": {
+    "color": {
+      "primary": {
+        "light": {
+          "$value": "{color.purple.100}",
+          "$type": "color",
+          "$description": "Tint for focus rings, hover states"
+        },
+        "base": {
+          "$value": "{color.purple.600}",
+          "$type": "color",
+          "$description": "Main CTA background"
+        },
+        "dark": {
+          "$value": "{color.purple.800}",
+          "$type": "color",
+          "$description": "CTA background on hover"
+        },
+        "fg": {
+          "$value": "{color.neutral.0}",
+          "$type": "color",
+          "$description": "White text/icons on the CTA"
+        }
+      }
+    },
+    "shape": {
+      "action-radius": {
+        "$value": "{radius.full}",
+        "$type": "dimension",
+        "$description": "Pill shape — Nova's friendly, rounded identity"
+      }
+    },
+    "shadow": {
+      "action": {
+        "$value": "{shadow.md}",
+        "$type": "shadow",
+        "$description": "Elevated — CTA lifts off the surface"
+      }
+    },
+    "border": {
+      "action-width": {
+        "$value": "{border.width.none}",
+        "$type": "dimension",
+        "$description": "No stroke; elevation alone defines the edge"
+      },
+      "action-color": {
+        "$value": "{color.purple.600}",
+        "$type": "color",
+        "$description": "Stroke color if border-width is ever enabled"
+      }
+    },
+    "font": {
+      "action-weight": {
+        "$value": "{font.weight.medium}",
+        "$type": "fontWeight",
+        "$description": "Friendly, approachable label weight"
+      }
+    },
+    "motion": {
+      "action-duration": {
+        "$value": "{motion.duration.base}",
+        "$type": "duration",
+        "$description": "200ms — smooth, fluid response"
+      },
+      "action-easing": {
+        "$value": "{motion.easing.ease-in-out}",
+        "$type": "cubicBezier",
+        "$description": "Symmetric curve — organic, consumer feel"
+      }
+    }
+  }
+}
