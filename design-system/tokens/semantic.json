@@ -1,0 +1,56 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+
+  "action": {
+    "primary": {
+      "bg":                  { "$value": "{color.blue.600}",      "$type": "color",
+                               "$description": "Resting background of the primary action (button). Brand files override this." },
+      "bg-hover":            { "$value": "{color.blue.700}",      "$type": "color",
+                               "$description": "Background on hover/focus." },
+      "bg-active":           { "$value": "{color.blue.900}",      "$type": "color",
+                               "$description": "Background while pressed." },
+      "fg":                  { "$value": "{color.neutral.0}",     "$type": "color",
+                               "$description": "Label and icon colour on the primary action." },
+      "radius":              { "$value": "{radius.md}",           "$type": "dimension",
+                               "$description": "Corner rounding. Set to {radius.none} for a sharp brand." },
+      "shadow":              { "$value": "{shadow.sm}",           "$type": "shadow",
+                               "$description": "Elevation at rest." },
+      "border-width":        { "$value": "{border-width.0}",      "$type": "dimension",
+                               "$description": "Stroke width. 0 = filled button, 1 or 2 = outline variant." },
+      "padding-x":           { "$value": "{space.4}",             "$type": "dimension",
+                               "$description": "Horizontal content inset." },
+      "padding-y":           { "$value": "{space.2}",             "$type": "dimension",
+                               "$description": "Vertical content inset." },
+      "font-size":           { "$value": "{font-size.sm}",        "$type": "dimension",
+                               "$description": "Label text size." },
+      "font-weight":         { "$value": "{font-weight.semibold}", "$type": "fontWeight",
+                               "$description": "Label text weight." },
+      "transition-duration": { "$value": "{duration.fast}",       "$type": "duration",
+                               "$description": "Speed of hover/focus transition." },
+      "transition-easing":   { "$value": "{easing.ease-out}",     "$type": "cubicBezier",
+                               "$description": "Curve of hover/focus transition." }
+    }
+  },
+
+  "surface": {
+    "page":        { "$value": "{color.neutral.50}",  "$type": "color",
+                     "$description": "Top-level page / canvas background." },
+    "card":        { "$value": "{color.neutral.0}",   "$type": "color",
+                     "$description": "Card, panel, sheet background." },
+    "card-border": { "$value": "{color.neutral.200}", "$type": "color",
+                     "$description": "Stroke colour around cards." },
+    "overlay":     { "$value": "{color.neutral.950}", "$type": "color",
+                     "$description": "Modal scrim base colour (apply opacity in the component)." }
+  },
+
+  "status": {
+    "success": {
+      "bg": { "$value": "{color.green.100}", "$type": "color" },
+      "fg": { "$value": "{color.green.700}", "$type": "color" }
+    },
+    "error": {
+      "bg": { "$value": "{color.red.100}", "$type": "color" },
+      "fg": { "$value": "{color.red.700}", "$type": "color" }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "$description": "Brand A — Blue Rounded. Override only the tokens that differ from semantic defaults. All unspecified tokens fall through to semantic.json.",
+
+  "action": {
+    "primary": {
+      "bg":        { "$value": "{color.blue.600}",   "$type": "color",
+                     "$description": "Blue brand uses the blue-600 swatch." },
+      "bg-hover":  { "$value": "{color.blue.700}",   "$type": "color" },
+      "bg-active": { "$value": "{color.blue.900}",   "$type": "color" },
+      "fg":        { "$value": "{color.neutral.0}",  "$type": "color" },
+      "radius":    { "$value": "{radius.md}",         "$type": "dimension",
+                     "$description": "Rounded corners — 8px." },
+      "shadow":    { "$value": "{shadow.sm}",         "$type": "shadow" }
+    }
+  },
+
+  "surface": {
+    "page": { "$value": "{color.blue.50}", "$type": "color",
+              "$description": "Blue brand tints the page background with the lightest blue." }
+  }
+}
