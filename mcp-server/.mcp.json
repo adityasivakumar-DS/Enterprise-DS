@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "loraloop": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "/Users/tamilarasan.karuppusamy/Downloads/Main App/mcp-server/build/mcp/index.js"
+      ],
+      "env": {
+        "LORALOOP_API_URL": "http://localhost:3000"
+      }
+    }
+  }
+}

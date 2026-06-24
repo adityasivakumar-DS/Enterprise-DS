@@ -1,0 +1,15 @@
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+
+# Claude Code session files
+.claude/
+
+# Nested repo — add as submodule when ready
+loraloop/
+
+# Node
+node_modules/
