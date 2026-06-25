@@ -5,6 +5,7 @@
       "50":  { "$value": "#EFF6FF", "$type": "color" },
       "100": { "$value": "#DBEAFE", "$type": "color" },
       "300": { "$value": "#93C5FD", "$type": "color" },
+      "400": { "$value": "#4A90E2", "$type": "color", "$description": "BT secondary blue — sourced from BT brand PDF." },
       "500": { "$value": "#3B82F6", "$type": "color" },
       "600": { "$value": "#2563EB", "$type": "color" },
       "700": { "$value": "#1D4ED8", "$type": "color" },
@@ -30,7 +31,32 @@
       "100": { "$value": "#DCFCE7", "$type": "color" },
       "500": { "$value": "#22C55E", "$type": "color" },
       "700": { "$value": "#15803D", "$type": "color" }
+    },
+    "purple": {
+      "50":  { "$value": "#F5F0FF", "$type": "color" },
+      "100": { "$value": "#EDE0FF", "$type": "color" },
+      "300": { "$value": "#C084FC", "$type": "color" },
+      "500": { "$value": "#7C3AED", "$type": "color" },
+      "600": { "$value": "#5514B4", "$type": "color", "$description": "BT brand primary purple — confirmed from BT brand PDF." },
+      "700": { "$value": "#3D0E7E", "$type": "color" },
+      "900": { "$value": "#1E0047", "$type": "color" }
+    },
+    "bt-neutral": {
+      "900": { "$value": "#111110", "$type": "color", "$description": "BT near-black — primary text colour from BT brand PDF." },
+      "800": { "$value": "#2D3232", "$type": "color", "$description": "BT dark charcoal." },
+      "600": { "$value": "#58595B", "$type": "color", "$description": "BT mid-gray." },
+      "500": { "$value": "#676763", "$type": "color" },
+      "400": { "$value": "#878781", "$type": "color", "$description": "BT secondary text / muted." },
+      "200": { "$value": "#D5D6D6", "$type": "color", "$description": "BT light border." },
+      "100": { "$value": "#E1E1DB", "$type": "color", "$description": "BT off-white surface tint." }
     }
+  },
+  "font-family": {
+    "brand":     { "$value": "'BTCurve', 'F37 Britain Humanist', system-ui, sans-serif", "$type": "fontFamily",
+                   "$description": "BT's proprietary font stack. BTCurve is the primary; F37BritainHumanist is secondary. Both confirmed from BT brand PDF." },
+    "sans":      { "$value": "system-ui, -apple-system, sans-serif", "$type": "fontFamily",
+                   "$description": "Generic sans-serif fallback for non-BT brands." },
+    "mono":      { "$value": "ui-monospace, 'Cascadia Code', monospace", "$type": "fontFamily" }
   },
   "radius": {
     "none": { "$value": "0px",    "$type": "dimension" },
@@ -64,7 +90,9 @@
     "md":  { "$value": "16px", "$type": "dimension" },
     "lg":  { "$value": "18px", "$type": "dimension" },
     "xl":  { "$value": "20px", "$type": "dimension" },
-    "2xl": { "$value": "24px", "$type": "dimension" }
+    "2xl": { "$value": "24px", "$type": "dimension" },
+    "3xl": { "$value": "30px", "$type": "dimension" },
+    "4xl": { "$value": "36px", "$type": "dimension" }
   },
   "font-weight": {
     "regular":  { "$value": "400", "$type": "fontWeight" },
@@ -84,17 +112,16 @@
     "slow":    { "$value": "300ms", "$type": "duration" }
   },
   "easing": {
-    "linear":      { "$value": "linear",                    "$type": "cubicBezier" },
+    "linear":      { "$value": "linear",                     "$type": "cubicBezier" },
     "ease-in":     { "$value": "cubic-bezier(0.4, 0, 1, 1)",  "$type": "cubicBezier" },
     "ease-out":    { "$value": "cubic-bezier(0, 0, 0.2, 1)",  "$type": "cubicBezier" },
     "ease-in-out": { "$value": "cubic-bezier(0.4, 0, 0.2, 1)","$type": "cubicBezier" }
   },
   "ring": {
-    "blue":    { "$value": "0 0 0 3px rgba(37, 99, 235, 0.25)",  "$type": "shadow",
-                 "$description": "NEW PRIMITIVE — focus ring for blue-family brands." },
-    "dark":    { "$value": "0 0 0 3px rgba(17, 24, 39, 0.25)",   "$type": "shadow",
-                 "$description": "NEW PRIMITIVE — focus ring for dark/neutral brands." },
-    "neutral": { "$value": "0 0 0 3px rgba(156, 163, 175, 0.4)", "$type": "shadow",
-                 "$description": "NEW PRIMITIVE — generic focus ring for unstyled contexts." }
+    "blue":    { "$value": "0 0 0 3px rgba(37, 99, 235, 0.25)",  "$type": "shadow" },
+    "dark":    { "$value": "0 0 0 3px rgba(17, 24, 39, 0.25)",   "$type": "shadow" },
+    "neutral": { "$value": "0 0 0 3px rgba(156, 163, 175, 0.4)", "$type": "shadow" },
+    "purple":  { "$value": "0 0 0 3px rgba(85, 20, 180, 0.28)",  "$type": "shadow",
+                 "$description": "BT purple focus ring — matches brand primary #5514B4." }
   }
 }

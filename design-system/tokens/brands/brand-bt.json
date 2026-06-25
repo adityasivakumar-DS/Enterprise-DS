@@ -1,0 +1,108 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "$description": "BT Brand — sourced from BT_Branding.pdf. Primary: BT Purple #5514B4. Secondary: BT Blue #4A90E2. Typography: BTCurve / F37 Britain Humanist. Neutrals extracted from PDF colour streams.",
+
+  "font": {
+    "family-base":     { "$value": "{font-family.brand}",    "$type": "fontFamily",
+                         "$description": "BTCurve is BT's primary typeface for body and UI." },
+    "family-heading":  { "$value": "{font-family.brand}",    "$type": "fontFamily",
+                         "$description": "BTCurve Headline variant for large display text." },
+    "weight-heading":  { "$value": "{font-weight.bold}",     "$type": "fontWeight" },
+    "weight-body":     { "$value": "{font-weight.regular}",  "$type": "fontWeight" },
+    "weight-emphasis": { "$value": "{font-weight.semibold}", "$type": "fontWeight" }
+  },
+
+  "action": {
+    "primary": {
+      "bg":        { "$value": "{color.purple.600}",  "$type": "color",
+                     "$description": "BT Purple #5514B4 — confirmed from brand PDF." },
+      "bg-hover":  { "$value": "{color.purple.700}",  "$type": "color" },
+      "bg-active": { "$value": "{color.purple.900}",  "$type": "color" },
+      "fg":        { "$value": "{color.neutral.0}",   "$type": "color" },
+      "radius":    { "$value": "{radius.sm}",          "$type": "dimension",
+                     "$description": "BT uses a structured 4px radius — not pill-shaped." },
+      "shadow":    { "$value": "{shadow.sm}",          "$type": "shadow" }
+    },
+    "secondary": {
+      "bg":        { "$value": "{color.blue.400}",    "$type": "color",
+                     "$description": "BT secondary blue #4A90E2 — from brand PDF." },
+      "bg-hover":  { "$value": "{color.blue.600}",    "$type": "color" },
+      "bg-active": { "$value": "{color.blue.700}",    "$type": "color" },
+      "fg":        { "$value": "{color.neutral.0}",   "$type": "color" },
+      "radius":    { "$value": "{radius.sm}",          "$type": "dimension" }
+    }
+  },
+
+  "text": {
+    "primary":   { "$value": "{color.bt-neutral.900}", "$type": "color",
+                   "$description": "BT near-black #111110 — primary text from PDF." },
+    "secondary": { "$value": "{color.bt-neutral.600}", "$type": "color",
+                   "$description": "BT mid-gray #58595B — secondary/muted text." },
+    "muted":     { "$value": "{color.bt-neutral.400}", "$type": "color",
+                   "$description": "BT light gray #878781 — placeholder/disabled text." },
+    "inverse":   { "$value": "{color.neutral.0}",      "$type": "color" },
+    "brand":     { "$value": "{color.purple.600}",     "$type": "color",
+                   "$description": "BT Purple used for links and brand emphasis." }
+  },
+
+  "surface": {
+    "page":        { "$value": "{color.neutral.0}",       "$type": "color",
+                     "$description": "BT uses a clean white page background." },
+    "card":        { "$value": "{color.neutral.0}",       "$type": "color" },
+    "card-border": { "$value": "{color.bt-neutral.200}",  "$type": "color",
+                     "$description": "BT light border #D5D6D6 from PDF." },
+    "subtle":      { "$value": "{color.bt-neutral.100}",  "$type": "color",
+                     "$description": "BT off-white #E1E1DB — section backgrounds." },
+    "brand":       { "$value": "{color.purple.600}",      "$type": "color",
+                     "$description": "BT Purple hero/banner background." }
+  },
+
+  "input": {
+    "fg":                 { "$value": "{color.bt-neutral.900}", "$type": "color" },
+    "placeholder-fg":     { "$value": "{color.bt-neutral.400}", "$type": "color" },
+    "border-color":       { "$value": "{color.bt-neutral.200}", "$type": "color" },
+    "border-color-focus": { "$value": "{color.purple.600}",     "$type": "color" },
+    "radius":             { "$value": "{radius.sm}",             "$type": "dimension" },
+    "shadow-focus":       { "$value": "{ring.purple}",           "$type": "shadow" }
+  },
+
+  "card": {
+    "radius":       { "$value": "{radius.md}",          "$type": "dimension" },
+    "border-color": { "$value": "{color.bt-neutral.200}", "$type": "color" },
+    "shadow":       { "$value": "{shadow.md}",           "$type": "shadow" }
+  },
+
+  "badge": {
+    "default": {
+      "bg": { "$value": "{color.purple.100}", "$type": "color" },
+      "fg": { "$value": "{color.purple.700}", "$type": "color" }
+    },
+    "secondary": {
+      "bg": { "$value": "{color.blue.100}",   "$type": "color",
+              "$description": "BT blue badge variant." },
+      "fg": { "$value": "{color.blue.700}",   "$type": "color" }
+    },
+    "neutral": {
+      "bg": { "$value": "{color.bt-neutral.100}", "$type": "color" },
+      "fg": { "$value": "{color.bt-neutral.600}", "$type": "color" }
+    },
+    "radius":      { "$value": "{radius.sm}",          "$type": "dimension",
+                     "$description": "BT uses a tag-style badge — 4px, not pill." },
+    "font-weight": { "$value": "{font-weight.semibold}", "$type": "fontWeight" }
+  },
+
+  "status": {
+    "success": {
+      "bg": { "$value": "{color.green.100}", "$type": "color" },
+      "fg": { "$value": "{color.green.700}", "$type": "color" }
+    },
+    "error": {
+      "bg": { "$value": "{color.red.100}", "$type": "color" },
+      "fg": { "$value": "{color.red.700}", "$type": "color" }
+    },
+    "brand": {
+      "bg": { "$value": "{color.purple.100}", "$type": "color" },
+      "fg": { "$value": "{color.purple.700}", "$type": "color" }
+    }
+  }
+}
