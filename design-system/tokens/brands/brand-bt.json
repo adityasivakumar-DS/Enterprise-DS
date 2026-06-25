@@ -1,0 +1,64 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "$description": "BT Brand — BT Purple. Overrides semantic defaults with BT's signature purple primary and magenta accent. All unspecified tokens fall through to semantic.json.",
+
+  "action": {
+    "primary": {
+      "bg":        { "$value": "{color.purple.600}",  "$type": "color",
+                     "$description": "BT primary purple #5514B4." },
+      "bg-hover":  { "$value": "{color.purple.700}",  "$type": "color" },
+      "bg-active": { "$value": "{color.purple.900}",  "$type": "color" },
+      "fg":        { "$value": "{color.neutral.0}",   "$type": "color" },
+      "radius":    { "$value": "{radius.sm}",          "$type": "dimension",
+                     "$description": "BT uses a slightly squared button — 4px radius." },
+      "shadow":    { "$value": "{shadow.sm}",          "$type": "shadow" }
+    },
+    "accent": {
+      "bg":        { "$value": "{color.magenta.500}", "$type": "color",
+                     "$description": "BT magenta accent action (CTA variants, highlights)." },
+      "bg-hover":  { "$value": "{color.magenta.700}", "$type": "color" },
+      "fg":        { "$value": "{color.neutral.0}",   "$type": "color" }
+    }
+  },
+
+  "surface": {
+    "page":        { "$value": "{color.purple.50}",  "$type": "color",
+                     "$description": "BT tints the page background with lightest purple." },
+    "card":        { "$value": "{color.neutral.0}",  "$type": "color" },
+    "card-border": { "$value": "{color.purple.100}", "$type": "color",
+                     "$description": "Card borders carry a subtle purple tint." }
+  },
+
+  "input": {
+    "border-color-focus": { "$value": "{color.purple.600}", "$type": "color" },
+    "radius":             { "$value": "{radius.sm}",         "$type": "dimension" },
+    "shadow-focus":       { "$value": "{ring.purple}",       "$type": "shadow" }
+  },
+
+  "card": {
+    "radius":       { "$value": "{radius.md}",         "$type": "dimension",
+                      "$description": "BT uses a modest 8px radius — modern but structured." },
+    "border-color": { "$value": "{color.purple.100}",  "$type": "color" },
+    "shadow":       { "$value": "{shadow.md}",          "$type": "shadow" }
+  },
+
+  "badge": {
+    "default": {
+      "bg": { "$value": "{color.purple.100}", "$type": "color" },
+      "fg": { "$value": "{color.purple.700}", "$type": "color" }
+    },
+    "accent": {
+      "bg": { "$value": "{color.magenta.100}", "$type": "color" },
+      "fg": { "$value": "{color.magenta.700}", "$type": "color" }
+    },
+    "radius": { "$value": "{radius.sm}", "$type": "dimension",
+                "$description": "BT uses a tag-style badge — squared, not pill." }
+  },
+
+  "status": {
+    "brand": {
+      "bg": { "$value": "{color.purple.100}", "$type": "color" },
+      "fg": { "$value": "{color.purple.700}", "$type": "color" }
+    }
+  }
+}
